@@ -1,0 +1,20 @@
+# PyInstaller
+build/ScreenTool/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Release binaries (too large for git, use GitHub Releases)
+release/*.exe
+
+# IDE
+.codebuddy/
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
