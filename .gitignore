@@ -10,6 +10,14 @@ __pycache__/
 # Release binaries (too large for git, use GitHub Releases)
 release/*.exe
 
+# 发布产物与 OCR 模型（体积过大，走 GitHub Releases / 本地分发）
+release/
+models/
+*.zip
+
+# 含本地凭据的发布脚本，请勿提交（token 请改为环境变量读取）
+create_release.py
+
 # IDE
 .codebuddy/
 .vscode/
