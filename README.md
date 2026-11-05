@@ -1,3 +1,5 @@
+**简体中文** | [English](README.en.md)
+
 # ScreenTool - 截屏工具箱 v2.3
 
 一个 Windows 截屏增强工具：**框选截图 + 主色提取 + 离线 OCR + 画笔批注 + 历史截图管理**，
