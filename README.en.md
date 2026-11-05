@@ -18,9 +18,7 @@ After a capture, the screenshot is automatically hung on the "rope" at the top o
 | Screenshot history | Card-grid browsing; rename, categorize, tag, note, favorite, search, sort and multi-select; one-click **copy (paste anytime)**, save as, re-annotate, overwrite, delete and export |
 | Rope photo wall | New captures automatically hang on the rope at the top of the screen (drop + swing animation); drag left/right to reorder, drag out to paste into the current app; auto-collapses into a glowing line when idle and expands on hover |
 | Frosted glass | Native blur-behind that truly blurs the content behind the window, with gradient tinting, rounded corners and edge glow; adjustable in Settings |
-| Settings | 7 tabs: General / Capture / History / Hotkeys / Brush / Storage / About; preferences are saved immediately |
-
-> The settings page now has **8 tabs** (with the new "Rope & Effects" tab).
+| Settings | 8 tabs: General / Capture / History / Rope & Effects / Hotkeys / Brush / Storage / About; preferences are saved immediately |
 
 ## How to use the rope (photo wall)
 
@@ -64,10 +62,20 @@ After a capture, the screenshot is automatically hung on the "rope" at the top o
 
 ### Option 1: download the EXE (recommended)
 
-Download the latest `ScreenTool.exe` from [Releases](https://github.com/user-henry/ScreenTool/releases)
-and put it in the same folder as the `models/` directory, then double-click it.
+Each release ships two packages:
 
-> On first launch it downloads the PaddleOCR ONNX models (about 10 MB); afterwards it works fully offline.
+| Asset | Description |
+|---|---|
+| `ScreenTool_v2.3.0_portable.zip` | Portable bundle (~470 MB): `ScreenTool.exe` + `models/`, ready to run offline |
+| `ScreenTool.exe` | Program only (~224 MB); users who **already have `models/`** can simply replace the old EXE |
+
+Download the portable bundle from [Releases](https://github.com/user-henry/ScreenTool/releases),
+extract it, keep `ScreenTool.exe` and `models/` in the same directory, and double-click the EXE.
+
+> `models/` contains the official PaddleOCR ONNX models, about **162.6 MB** in total:
+> text detection `PP-OCRv6_medium_det` (59.2 MB), text recognition `PP-OCRv6_medium_rec` (73.0 MB)
+> and document unwarping `UVDoc` (30.2 MB, not enabled in the current configuration). The models ship with the
+> package, so no download is required at runtime.
 
 ### Option 2: run from source
 
